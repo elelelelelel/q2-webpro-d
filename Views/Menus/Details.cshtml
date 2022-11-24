@@ -1,0 +1,52 @@
+﻿@model MVCMenus.Entities.Menus
+
+<div>
+    <h4>Book Details</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.BooksId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BooksId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.BooksName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BooksName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ReleaseDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ReleaseDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Category)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Category)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Description)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Description)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { code = Model.BooksId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
