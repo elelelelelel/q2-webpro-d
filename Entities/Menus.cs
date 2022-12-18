@@ -26,7 +26,7 @@ public partial class Menus
 
     public string Category { get; set; }
 
-    public string Description { get; set; }
+    public string Description { get; set ; }
 
 }
 
